@@ -1,5 +1,6 @@
 {
   "name": "cwm",
+  "homepage": "https://anetacamo.github.io/coding",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
