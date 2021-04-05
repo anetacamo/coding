@@ -1,0 +1,40 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+.container-wide {
+  max-width: 1000px;
+  margin: 48px auto;
+}
+
+.blog-text {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  margin: 24px auto;
+}
+
+body {
+  background-image: url(../images/random.png);
+  background-size: 1000px;
+}
+
+.square {
+  background-color: #ff2da4;
+  height: 140px;
+  width: 140px;
+  color: white;
+}
+.framed {
+  border: 16px solid var(--primary);
+}
+.padding {
+  padding: 16px;
+}
+.margin {
+  margin: 16px;
+}
+.flex {
+  display: flex;
+}
