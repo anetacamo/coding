@@ -3,12 +3,10 @@ import MegaMenu from './components/megaMenu';
 import Content from './components/content';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Grid from './components/grid';
 
 function App() {
   return (
     <Router>
-      <Grid />
       <Header />
       <div className='container blog-text'>
         <Switch>
