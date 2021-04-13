@@ -15,8 +15,8 @@ browser window (_favicon_), etc.
 ```html
 <head>
   <title>The Homepage Title displayed in the browser windows</title>
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="styles/typography.css" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/typography.css" />
 </head>
 ```
 
@@ -24,15 +24,21 @@ browser window (_favicon_), etc.
 rendered directly
 
 ```html
-<!DOCTYPE >
+<!DOCTYPE html>
 <html>
   <head>
     <title>The Homepage Title displayed in the browser windows</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/typography.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/typography.css" />
   </head>
   <body>
     this is where the coding happens!
   </body>
 </html>
 ```
+
+### Comment in html
+
+In html and css (and any other language) you can write notes to yourself or anyone else. Every language has a specific way to render a comment. Comments will be published and accessible in the source code but will not interact with the code.
+
+`<!-- this is a comment in html --> `

@@ -10,7 +10,7 @@ function App() {
       <Header />
       <div className='container blog-text'>
         <Switch>
-          <Route path='/' exact component={Content} />
+          <Route path='/home' exact component={Content} />
           <Route path='/html' component={Content} />
           <Route path='/css' component={Content} />
           <Route path='/css-props' component={Content} />

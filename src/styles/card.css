@@ -19,6 +19,12 @@
   background-repeat: no-repeat;
   transition: all ease 0.8s;
 }
+
+@media (max-width: 1080px) {
+  .box {
+    margin: 4px;
+  }
+}
 .box:hover {
   background-size: 200% 200%; /* 200% because gradient is colored only for 50% */
   background-position: 0px 0px; /* bring it fully into view */
@@ -36,6 +42,11 @@ a.box p {
   margin: -12px;
   box-sizing: border-box;
   flex-wrap: wrap;
+}
+@media (max-width: 1080px) {
+  .box-container {
+    margin: -4px;
+  }
 }
 .box img {
   width: 100px;

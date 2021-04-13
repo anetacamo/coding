@@ -11,7 +11,7 @@ const MegaMenu = () => {
           <a href={slugify(item.title)} className='box'>
             <div>
               <img
-                src={`/images/${slugify(item.title)}.png`}
+                src={`/coding/images/${slugify(item.title)}.png`}
                 alt={item.title}
               />
               <h5>{item.title}</h5>

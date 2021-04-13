@@ -13,25 +13,14 @@ description: List of most commonly used html tags
 
 Div is a shortcut for a _divider_. It is a basic unit - _a building block_ of the html document. We can imagine it as an - by default - unvisible empty container.
 
-![more about divs](#div)
-
-<!--
-<table>
-  <tr>
-    <th>tag syntax</td>
-    <td>example of use</td>
-    <th>default styles</th>
-    <td>description</td>
-  </tr>
-</table>
--->
+[more about divs](/#div)
 
 ### images and links
 
-| tag syntax              | example of use                                            | default styles         | description                                                                                                                                                                                                                                              |
-| ----------------------- | --------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<img src="" alt="" />` | `<img src="images/dog.png" alt="a dog eating a salad" />` | display: inline-block; | **Images** _src_ attribute accepts both local and external links to images. _alt_ tag is important for SEO valiadation. That is a place to write some descriptive text about image for people with vision imparement who get the websites read out loud. |
-| `<a href=""></a>`       | `<a href="/html.html" target="_blank">learn html</a>`     | --------------         | **Links** This is a link to the _local_ file called `about.html` in your folder. `target="_blank"` opens the link in new tab.                                                                                                                            |
+| tag syntax              | example of use                                           | default styles         | description                                                                                                                                                                                                                                              |
+| ----------------------- | -------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<img src="" alt="" />` | `<img src= "/img/dog.png" alt="a dog eating a salad" />` | display: inline-block; | **Images** _src_ attribute accepts both local and external links to images. _alt_ tag is important for SEO valiadation. That is a place to write some descriptive text about image for people with vision imparement who get the websites read out loud. |
+| `<a href=""></a>`       | `<a href= "/file.html" target="_blank">learn html</a>`   | --------------         | **Links** This is a link to the _local_ file called `about.html` in your folder. `target="_blank"` opens the link in new tab.                                                                                                                            |
 
 <!--
 <table>
