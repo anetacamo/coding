@@ -36,14 +36,24 @@ button:hover,
 
 ### A welcome screen
 
-### Favicon & meta descriptions
+### an mail signature
 
-### Add a logo
+### Adding a logo
 
 ### Build a menu
+
+### Favicon & meta descriptions
 
 ### Create a custom pointer
 
 ### Make a side menu
 
+### Coding a slider
+
+### Custom Text-highlighting
+
 ### Build a responsive layout
+
+### Flexbox item list
+
+### Carousel

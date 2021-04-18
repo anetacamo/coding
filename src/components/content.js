@@ -7,7 +7,7 @@ import { slugify } from '../utils/slugify';
 const Content = ({ match }) => {
   let title = match.path.substring(1);
   return (
-    <div>
+    <div className='container blog-text'>
       {postlist.map((item) =>
         slugify(item.title) === title ? (
           <ReactMarkdown

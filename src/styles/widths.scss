@@ -18,6 +18,12 @@ body {
     margin-right: 12px;
   }
 }
+@media (max-width: 750px) {
+  .container-wide {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
 
 .blog-text {
   background-color: white;
@@ -35,6 +41,12 @@ body {
 @media (max-width: 800px) {
   .blog-text {
     padding: 24px;
+  }
+}
+@media (max-width: 750px) {
+  .blog-text {
+    margin-left: 12px;
+    margin-right: 12px;
   }
 }
 
@@ -55,4 +67,10 @@ body {
 }
 .flex {
   display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

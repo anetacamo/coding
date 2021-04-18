@@ -14,16 +14,19 @@ pre {
   font-size: 16px;
   margin: 32px 0;
 }
-pre code {
-  background-color: transparent;
-  padding: 0;
-}
+
 code {
   background-color: #ffe4f3;
   background-color: #eeddff;
   border-radius: 4px;
   padding: 4px 8px;
+  white-space: nowrap;
 }
-th code {
+pre code {
+  background-color: transparent;
+  padding: 0;
+  white-space: break-spaces;
+}
+td:first-of-type code {
   background-color: black;
 }

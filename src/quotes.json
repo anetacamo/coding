@@ -1,0 +1,22 @@
+[
+  {
+    "greet": "life is meaning less.",
+    "image2": "/coding/images/boom3.png",
+    "quote": "CODING IS BORING.",
+    "more2": "Life is meaningless. Identity is a construct. Free will doesnt exist. ",
+    "button": "Get Started"
+  },
+  {
+    "greet": "so are you!",
+    "image2": "/coding/images/boom3.png",
+    "quote": "Coding is difficult.",
+    "more2": "Working in a McDonnald and smelling like fries for the whole life is difficult",
+    "button": "McDonnald recruitment page"
+  },
+  {
+    "greet": "<omg />",
+    "image2": "/coding/images/boom3.png",
+    "quote": "I never wanted to do this.",
+    "button": "I am leaving this site"
+  }
+]

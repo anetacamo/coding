@@ -8,7 +8,7 @@ const MegaMenu = () => {
     <div className='container-wide'>
       <div className='flex box-container'>
         {postlist.map((item) => (
-          <a href={slugify(item.title)} className='box'>
+          <a href={`/#/${slugify(item.title)}`} className='box'>
             <div>
               <img
                 src={`/coding/images/${slugify(item.title)}.png`}

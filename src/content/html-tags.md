@@ -1,5 +1,5 @@
 ---
-title: Html tags
+title: Html Tags
 description: List of most commonly used html tags
 ---
 
@@ -22,32 +22,6 @@ Div is a shortcut for a _divider_. It is a basic unit - _a building block_ of th
 | `<img src="" alt="" />` | `<img src= "/img/dog.png" alt="a dog eating a salad" />` | display: inline-block; | **Images** _src_ attribute accepts both local and external links to images. _alt_ tag is important for SEO valiadation. That is a place to write some descriptive text about image for people with vision imparement who get the websites read out loud. |
 | `<a href=""></a>`       | `<a href= "/file.html" target="_blank">learn html</a>`   | --------------         | **Links** This is a link to the _local_ file called `about.html` in your folder. `target="_blank"` opens the link in new tab.                                                                                                                            |
 
-<!--
-<table>
-  <tr>
-    <th>`<img src="" alt="" />`</th>
-    <td>`<img src="images/dog.png" alt="a dog eating a salad" />`</td>
-    <td>display: inline-block;</td>
-    <td>
-      <b>Images</b> _src_ attribute accepts both local and external links to images. _alt_ tag
-      is important for SEO valiadation. That is a place to write some descriptive text about image for people with
-      vision imparement who get the websites read out loud.
-    </td>
-  </tr>
-
-  <tr>
-    <th>`<a href=""></a>`</th>
-    <td></td>
-    <td></td>
-    <td><b>Links.</b> `<a href="/about.html"></a>` is a link to the _local_ file called
-      `about.html` in your folder. By
-      `<a href="https://google.com" target="_blank">go to google</a>` you link to an
-      _external_ link online. `target="_blank"` opens the link
-      in new tab.</td>
-  </tr>
-</table>
--->
-
 ### body & Head
 
 Each html document consists of head and body pair tag that is displayed only once wrapped inside html pair tag.
@@ -58,38 +32,6 @@ Each html document consists of head and body pair tag that is displayed only onc
 | `<body></body>` |                | display: block; margin: 8px; | **Body** wraps in all the directly rendered code of html page. Each html document consists of head and body tag.                                                                           |
 | `<head></head>` |                | display: none;               | **Head** is a place where indirect settings of the page are defined: external documents are linked, favicon and page name is setted etc. Each html document consists of head and body tag. |
 
-<!--
-<table>
-  <tr>
-    <th>`<html></html>`</th>
-    <td>display: block;</br>
-      margin: 8px;</td>
-    <td></td>
-    <td>
-      <b>Html tag</b> Each html document consists of head and body tag wrapped in pair of html tags.
-    </td>
-  </tr>
-  <tr>
-    <th>`<body></body>`</th>
-    <td>display: block;</br>
-      margin: 8px;</td>
-    <td></td>
-    <td>
-      <b>Body</b> wraps in all the directly rendered code of html page. Each html document consists of head and body tag.
-    </td>
-  </tr>
-  <tr>
-    <th>`<head></head>`</th>
-    <td>display: none;</td>
-    <td></td>
-    <td>
-      <b>Head</b> is a place where indirect settings of the page are defined: external documents are linked, favicon and
-      page name is setted etc. Each html document consists of head and body tag.
-    </td>
-  </tr>
-</table>
--->
-
 ### paragraphs and heading styles
 
 | tag syntax                                                              | example of use | default styles               | description                                                                                                                                                                                                                                                                                       |
@@ -97,41 +39,6 @@ Each html document consists of head and body pair tag that is displayed only onc
 | `<p></p>`                                                               |                |                              | **Paragraph** is a common body text.                                                                                                                                                                                                                                                              |
 | `<h1></h1>` `<h2></h2>` `<h3></h3>` `<h4></h4>` `<h5></h5>` `<h6></h6>` |                | display: block; margin: 8px; | **Headings** _h1_ is a main title, rendered in the biggest and boldest letters by default. It should be used only once on each page and should work as a main title of a page, for improving the SEO. _h2_ is a second level, and the higher the number the smaller and less bold letters become. |
 | `<blockquote></blockquote>`                                             |                | display: none;               | **Quotation style** highlighted paragraph                                                                                                                                                                                                                                                         |
-
-<!--
-<table>
-  <tr>
-    <th>`<p></p>`</th>
-    <td></td>
-    <td></td>
-    <td><b>Paragraph</b> is a body text.
-    </td>
-  </tr>
-  <tr>
-    <th>
-      `<h1></h1>`
-      `<h2></h2>`
-      `<h3></h3>`
-      `<h4></h4>`
-      `<h5></h5>`
-      `<h6></h6>`
-    </th>
-    <td></td>
-    <td></td>
-    <td><b>Headings</b> _h1_ is a main title, rendered in the biggest and boldest letters by default. It should
-      be used only once on each page and should work as a main title of a page, for improving the SEO. _h2_ is
-      a second level, and the higher the number the smaller and less bold letters become.
-    </td>
-  </tr>
-  <tr>
-    <th>`<blockquote></blockquote>`</th>
-    <td></td>
-    <td></td>
-    <td><b>Quotation style</b> highlighted paragraph
-    </td>
-  </tr>
-</table>
--->
 
 ### text highlighting
 
@@ -142,76 +49,17 @@ Each html document consists of head and body pair tag that is displayed only onc
 | `<u></u>`   |                |                | _Underlined text_ Underlines a text written within the tags.               |
 | `<em></em>` |                |                | _Emphasized text_ Makes a text that is written within the tags emphasized. |
 
-<!--
-<table>
-  <tr>
-    <th>`__`</td>
-    <td></td>
-    <td></td>
-    <td><b>Italic text</b> Makes a text that is written within the tags italic.
-    </td>
-  </tr>
-  <tr>
-    <th>
-      `<b></b>`
-    </th>
-    <td></td>
-    <td></td>
-    <td><b>Bold text</b> Makes a text that is written within the tags bold.
-    </td>
-  </tr>
-  <tr>
-    <th>`<u></u>`</th>
-    <td></td>
-    <td></td>
-    <td><b>Underlined text</b>
-    </td>
-  </tr>
-  <tr>
-    <th>`<em></em>`</th>
-    <td></td>
-    <td></td>
-    <td><b>Emphasized text</b>
-    </td>
-  </tr>
-</table>
--->
-
 ### New Line
 
 | tag syntax | example of use | default styles | description                                      |
 | ---------- | -------------- | -------------- | ------------------------------------------------ |
 | `<br />`   |                |                | _New line_ Non pair element. Creates a new line. |
 
-<!--
-<table>
-  <tr>
-    <th>`<br />`</td>
-    <td></td>
-    <td></td>
-    <td><b>New line</b> Non pair element. Creates a new line.
-    </td>
-  </tr>
-</table>
--->
-
 ### Button
 
 | tag syntax           | example of use | default styles | description                                                          |
 | -------------------- | -------------- | -------------- | -------------------------------------------------------------------- |
 | `<button><button />` |                |                | **Button** A text between will be rendered as a button to be clicked |
-
-<!--
-<table>
-  <tr>
-    <th>`<button></button>`</td>
-    <td></td>
-    <td><button>Click me!</button></td>
-    <td><b>Button</b> A text between will be rendered as a button to be clicked
-    </td>
-  </tr>
-</table>
--->
 
 ### LISTS
 
@@ -251,6 +99,7 @@ _ordered list_ - displays numbers
   <li>Milk</li>
 </ol>
 
+<!---
 ### form
 
 If the name attribute is omitted, the value of the input field will not be sent at all.
@@ -289,12 +138,15 @@ If the name attribute is omitted, the value of the input field will not be sent 
   <input type="submit" />
 </form>
 ```
+-->
 
 ### TABLE
 
-`<table></table>`
-`<tr></tr>`
-`<th></th>`
+Table as default does not have a lot of styling. To get the look applied on the following form some styling in css needs to be done.
+
+`<table></table>`<br/>
+`<tr></tr>`<br/>
+`<th></th>`<br/>
 `<td></td>`
 
 ```html
@@ -317,9 +169,34 @@ If the name attribute is omitted, the value of the input field will not be sent 
   </tr>
   <tr>
     <td>January</td>
-    <td>$100</td>
+    <td>- $100</td>
   </tr>
 </table></pre>
+
+```css
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 4px solid blueviolet;
+  padding: 8px;
+}
+th {
+  text-align: left;
+  background-color: blueviolet;
+  color: white;
+}
+
+table pre {
+  background-color: black;
+  color: white;
+}
+table code {
+  white-space: normal;
+}
+```
 
 ## More about html elements
 

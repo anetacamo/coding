@@ -18,13 +18,11 @@
   background-position: -50px -50px; /* negative positioning to hide it initially */
   background-repeat: no-repeat;
   transition: all ease 0.8s;
-}
-
-@media (max-width: 1080px) {
-  .box {
+  @media (max-width: 1080px) {
     margin: 4px;
   }
 }
+
 .box:hover {
   background-size: 200% 200%; /* 200% because gradient is colored only for 50% */
   background-position: 0px 0px; /* bring it fully into view */
@@ -42,15 +40,14 @@ a.box p {
   margin: -12px;
   box-sizing: border-box;
   flex-wrap: wrap;
-}
-@media (max-width: 1080px) {
-  .box-container {
+  @media (max-width: 1080px) {
     margin: -4px;
   }
+  img {
+    width: 100px;
+  }
 }
-.box img {
-  width: 100px;
-}
+
 .box p,
 .box img,
 .box h5 {
