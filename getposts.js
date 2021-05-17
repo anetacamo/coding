@@ -47,6 +47,7 @@ const getPosts = () => {
           id: i + 1,
           title: metadata.title ? metadata.title : '',
           description: metadata.description ? metadata.description : '',
+          menu: metadata.menu ? metadata.menu : null,
           author: metadata.author ? metadata.author : 'Aneta Camo',
           content: content ? content : 'no content',
         };
