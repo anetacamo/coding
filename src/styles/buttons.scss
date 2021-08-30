@@ -15,4 +15,12 @@ button {
     color: white;
     transition-duration: 350ms;
   }
+  @media (max-width: 900px) {
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+  @media (max-width: 600px) {
+    font-size: 14px;
+    padding: 18px 20px;
+  }
 }

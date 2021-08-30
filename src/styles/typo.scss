@@ -58,21 +58,30 @@ b {
   color: var(--primary);
 }
 
-p {
-  font-weight: 600;
-  line-height: 1.4;
-}
-p {
+p,
+li {
   line-height: 1.8;
   font-weight: 400;
   font-family: 'Noto Serif';
+  @media (max-width: 900px) {
+    font-size: 15px;
+  }
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 }
 
 h1 {
   font-weight: 900;
-  font-size: 64px;
+  font-size: 56px;
   line-height: 1;
-  margin-top: 64px;
+  line-height: 0.8;
+  @media (max-width: 900px) {
+    font-size: 64px;
+  }
+  @media (max-width: 600px) {
+    font-size: 48px;
+  }
 }
 
 h2 {
@@ -81,6 +90,9 @@ h2 {
   letter-spacing: 1px;
   font-weight: 800;
   margin-top: 80px;
+  @media (max-width: 600px) {
+    font-size: 32px;
+  }
 }
 
 h3 {
@@ -119,6 +131,7 @@ blockquote {
   padding-left: 24px;
   line-height: 1.8;
   font-weight: 300;
+  font-style: italic;
 }
 
 .bq2 {

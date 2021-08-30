@@ -1,6 +1,7 @@
 ---
 title: Home
 description: Go back home. I mean, get started
+menu: true
 ---
 
 # Get Started
@@ -53,4 +54,11 @@ When you are coding most of the time it does not work. The best tool to help fin
 | Find your folder in browser | Ctrl + O            | Cmd + O         |
 | Refresh a page              | Ctrl + R            | Cmd + R         |
 | Inspect an Element          | Ctrl + Shift + C    | Cmd + Shift + C |
-| Inspect an Element          | Ctrl + Shift + C    | Cmd + Shift + C |
+| Find and highligt same text | Ctrl + D            | Cmd + D         |
+| Comment code                | Ctrl + K + C        | Cmd + K + C     |
+| Uncomment                   | Ctrl + K + U        | Cmd + K + U     |
+
+### Special characters:
+
+~ : alt + ^  
+| : alt + i

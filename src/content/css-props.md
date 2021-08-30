@@ -3,7 +3,9 @@ title: Css Props
 description: List of the most useful CSS properties and examples of use
 ---
 
-# Most commonly used styles
+# list of useful css properities
+
+For the sake of all of us this is not a complete list. For the full exhausting list of CSS properities look a those [539 styles total](https://www.w3.org/Style/CSS/all-properties.en.html)
 
 ### background styling
 

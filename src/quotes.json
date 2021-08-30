@@ -3,20 +3,22 @@
     "greet": "life is meaning less.",
     "image2": "/coding/images/boom3.png",
     "quote": "CODING IS BORING.",
-    "more2": "Life is meaningless. Identity is a construct. Free will doesnt exist. ",
-    "button": "Get Started"
+    "more2": "Identity is a construct. Free will doesnt exist.",
+    "button": "Don't Get Started"
   },
+
   {
-    "greet": "so are you!",
+    "greet2": "so are you!",
     "image2": "/coding/images/boom3.png",
     "quote": "Coding is difficult.",
-    "more2": "Working in a McDonnald and smelling like fries for the whole life is difficult",
-    "button": "McDonnald recruitment page"
+    "more2": "How can one ever code a website when you cannot even figure out what you wanna have for breakfast?!",
+    "button": "I am leaving this site"
   },
   {
-    "greet": "<omg />",
+    "greet": "Find some other hobby before its too late",
     "image2": "/coding/images/boom3.png",
     "quote": "I never wanted to do this.",
-    "button": "I am leaving this site"
+    "more": "This is it. Welcome to my webpage where you can learn to code too! Read more about other's people failure stories and dissapointment to their parents here.",
+    "button": "me neither!"
   }
 ]

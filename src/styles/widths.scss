@@ -25,52 +25,16 @@ body {
   }
 }
 
-.blog-text {
-  background-color: white;
-  padding: 48px;
-  border-radius: 8px;
-  background-color: #f8f8f8;
-  margin: 12px auto;
-}
-@media (max-width: 1112px) {
-  .blog-text {
-    margin-left: 102px;
-    margin-right: 12px;
-  }
-}
-@media (max-width: 800px) {
-  .blog-text {
-    padding: 24px;
-  }
-}
-@media (max-width: 750px) {
-  .blog-text {
-    margin-left: 12px;
-    margin-right: 12px;
-  }
-}
-
-.square {
-  background-color: #ff2da4;
-  height: 140px;
-  width: 140px;
-  color: white;
-}
-.framed {
-  border: 16px solid var(--primary);
-}
-.padding {
-  padding: 16px;
-}
-.margin {
-  margin: 16px;
-}
-.flex {
-  display: flex;
-}
-
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+// scrollbar
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
 }

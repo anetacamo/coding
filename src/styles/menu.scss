@@ -1,61 +1,62 @@
-.menu .container {
-  padding: 12px;
-  background-color: black;
-}
-
-.menu .flex {
-  justify-content: space-between;
-}
-
-.menu li {
-  list-style: none;
-  font-size: 12px;
-  padding-left: 4px;
-}
-.menu a {
-  padding: 24px 0;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 2px;
-  display: flex;
-  align-items: center;
-  max-width: 64px;
-  border-radius: 4px;
-  padding: 8px 0;
-}
-.menu a:hover {
-  background-color: var(--secondary);
-  transition-duration: 350ms;
-}
-
-.menu img {
-  max-width: 42px;
-  filter: brightness(0) invert(1);
-}
-
-/* fix for side menu */
-@media (min-width: 750px) {
-  .menu .container {
-    position: fixed;
-    height: 100%;
-    flex-direction: column;
+.menu {
+  .container {
+    padding: 12px;
     background-color: black;
-    top: 0;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 36px 12px;
   }
-  .menu a {
-    display: block;
+  .flex {
+    justify-content: space-between;
   }
-}
+  li {
+    list-style: none;
+    font-size: 12px;
+    padding-left: 4px;
+    font-family: 'Raleway';
+  }
+  a {
+    padding: 24px 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    max-width: 64px;
+    border-radius: 4px;
+    padding: 8px 0;
+    &:hover {
+      background-color: var(--secondary);
+      transition-duration: 350ms;
+    }
+  }
 
-@media (max-width: 650px) {
-  .menu li {
-    display: none;
+  img {
+    max-width: 42px;
+    filter: brightness(0) invert(1);
   }
-  .menu img {
-    max-width: 36px;
+
+  /* fix for side menu */
+  @media (min-width: 750px) {
+    .container {
+      position: fixed;
+      height: 100%;
+      flex-direction: column;
+      background-color: black;
+      top: 0;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 36px 12px;
+    }
+    a {
+      display: block;
+    }
+  }
+
+  @media (max-width: 650px) {
+    li {
+      display: none;
+    }
+    img {
+      max-width: 36px;
+    }
   }
 }

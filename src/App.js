@@ -2,6 +2,8 @@ import Header from './components/header';
 import MegaMenu from './components/megaMenu';
 import Content from './components/content';
 import Welcome from './components/welcome';
+import postlist from './posts.json';
+import { slugify } from './utils/slugify';
 
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -10,13 +12,14 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route path='/' exact component={Welcome} />
-        <Route path='/home' component={Content} />
-        <Route path='/html' component={Content} />
-        <Route path='/css' component={Content} />
-        <Route path='/css-props' component={Content} />
-        <Route path='/html-tags' component={Content} />
-        <Route path='/excer-cises' component={Content} />
+        {postlist.map((post, index) => (
+          <Route
+            path={`/${slugify(post.title)}`}
+            component={Content}
+            exact
+            key={index}
+          />
+        ))}
       </Switch>
       <MegaMenu />
     </Router>
