@@ -3,7 +3,7 @@ title: Home
 description: Go back home. I mean, get started
 ---
 
-# Get Started
+# Get Started 2
 
 ### What is HTML and CSS?
 
