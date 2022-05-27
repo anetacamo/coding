@@ -2,6 +2,8 @@
 title: Home
 description: Go back home. I mean, get started
 menu: true
+tags: [html, basics]
+type: learning
 ---
 
 # Get Started

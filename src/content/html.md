@@ -2,6 +2,8 @@
 title: Html
 description: How to write HTML document
 menu: true
+tags: [html, basics]
+type: learning
 ---
 
 # Writing HTML

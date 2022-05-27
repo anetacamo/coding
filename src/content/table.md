@@ -1,6 +1,8 @@
 ---
 title: Tables
 description: How to write Tables
+tags: [css]
+type: learning
 ---
 
 ## Tables

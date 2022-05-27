@@ -1,6 +1,8 @@
 ---
 title: Css Props
 description: List of the most useful CSS properties and examples of use
+tags: [css, styles, basics]
+type: learning
 ---
 
 # list of useful css properities

@@ -2,7 +2,12 @@ import React, { useEffect } from 'react';
 import Prism from 'prismjs';
 import 'prismjs/themes/prism-colddark-dark.css';
 
-export default function Code({ code, language }) {
+type AppProps = {
+  code: any;
+  language: any;
+};
+
+export default function Code({ code, language }: AppProps) {
   useEffect(() => {
     Prism.highlightAll();
   }, []);

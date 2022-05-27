@@ -6,8 +6,8 @@ import postlist from '../posts.json';
 
 const Header = () => {
   return (
-    <div class='menu bg-blueviolet'>
-      <div class='container flex'>
+    <div className='menu bg-blueviolet'>
+      <div className='container flex'>
         {postlist.map((item) => (item.menu ? <MenuItem item={item} /> : null))}
       </div>
     </div>

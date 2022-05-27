@@ -1,6 +1,9 @@
 ---
-title: Excercises
+title: xcrcs
 menu: true
+display: false
+tags: [js, typescript, framework]
+type: excercise
 ---
 
 ## Excercises

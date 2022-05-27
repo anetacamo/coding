@@ -1,6 +1,8 @@
 ---
-title: Javascript
+title: JS
 menu: true
+tags: [js, basics]
+type: learning
 ---
 
 ## about JS
@@ -218,6 +220,94 @@ const square = (number) => number * number;
 ```
 
 > if the body of our function includes only one line and return the value we can ommit the parenthesis and return keyword
+
+### Call back functions
+
+A callback function is a function which is:
+
+- accessible by another function
+- is invoked after the first function if that first function completes
+
+> a function that is "called at the back" of the function it is passed into.
+
+Maybe a better name would be a "call after" function. This construct is very useful for asynchronous behaviour where we want an activity to take place whenever a previous event completes.
+
+- Call it
+- Wait for the result
+- Continue once the result comes in
+
+```js
+const myCalculator = ((num1, num2, myCallback) => {
+  let sum = num1 + num2;
+  myCallback(sum))
+}
+```
+
+### ASYNC
+
+The keyword async before a function makes the function return a promise:
+
+```js
+async function sayHi() {
+  return 'Hello';
+}
+```
+
+the way that hello is returned is actually looking like this: `return Promise.resolve("Hello");`
+
+```js
+sayHi().then(
+  function (value) {
+    /* code if successful */
+  },
+  function (error) {
+    /* code if some error */
+  }
+);
+```
+
+### AWAIT
+
+The keyword await before a function makes the function wait for a promise:
+
+- can only be used _inside an async_ function.
+
+```js
+let value = await promise;
+```
+
+#### getting a file
+
+```js
+async function getFile() {
+  let myPromise = new Promise((myResolve, myReject) => {
+    let req = new XMLHttpRequest();
+    req.open('GET', 'mycar.html');
+    req.onload = () => {
+      req.status == 200 ? myResolve(req.response) : myResolve('File not Found');
+    };
+    req.send();
+  });
+  document.getElementById('demo').innerHTML = await myPromise;
+}
+
+getFile();
+```
+
+#### waiting for a timeout
+
+```js
+async function myDisplay() {
+  let myPromise = new Promise((myResolve, myReject) => {
+    setTimeout(() => {
+      myResolve('I love You !!');
+    }, 3000);
+  });
+  document.getElementById('demo').innerHTML = await myPromise;
+}
+```
+
+myDisplay();
 
 ### variables
 

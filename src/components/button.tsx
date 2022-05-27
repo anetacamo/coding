@@ -1,6 +1,12 @@
 import React from 'react';
 
-const Button = ({ children, onButtonClick, nameClass }) => {
+type AppProps = {
+  nameClass: any;
+  onButtonClick: any;
+  children: any;
+};
+
+const Button = ({ children, onButtonClick, nameClass }: AppProps) => {
   return (
     <div
       className={nameClass ? nameClass : null}

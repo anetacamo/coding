@@ -1,5 +1,7 @@
 ---
 title: JS methods
+tags: [js, basics]
+type: learning
 ---
 
 ## string methods

@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import postlist from '../posts.json';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
-import { slugify } from '../utils/slugify';
 
-const Content = ({ match, tables }) => {
+type AppProps = {
+  match: any;
+  tables: any;
+};
+
+const Content = ({ match, tables }: AppProps) => {
   let title = match.path.substring(1);
 
   const [eventText, setEventText] = useState('');

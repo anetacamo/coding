@@ -1,24 +1,35 @@
 ---
 title: Git
 description: Go back home. I mean, get started
+tags: [git]
+type: learning
 ---
 
-Git stores and operates on your data in your local file system.
-In fact, Git is referred to as a distributed version control system because the source code is stored, or distributed, locally across any number of computers and servers. This is different from many of the source control tools that preceded Git.
+# Git
+
+_Git stores and operates on your data in your local file system._
+
+In fact, Git is referred to as a _distributed version control system_ because the source code is stored, or distributed, locally across any number of computers and servers. This is different from many of the source control tools that preceded Git.
 
 ## repo clone
 
-`git clone https://github.com/AckeeCZ/ackee-web-testing-task.git ackee`
+`git clone https://github.com/username/repo-name.git folder-name`
 
 #### packages installation
 
-(in package directory, no arguments): Install the dependencies in the local node_modules folder.
+(in package directory, no arguments): Install the dependencies into the local node_modules folder.
+
 `npm install`
+`yarn install`
 
 ## git stash
 
+git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on.
+
+Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit.
+
 ```git
-git checkout b new-branch-name
+git checkout -b new-branch-name
 ```
 
 do something
@@ -27,7 +38,7 @@ do something
 git stash save "some message"
 ```
 
-saves all the work done meanwhile
+saves all the work done in the new branch.
 
 ```git
 git stash list
@@ -48,7 +59,7 @@ git stash pop
 
 takes the first stash, applies changes and deletes the stash.
 
-#### this thing
+## this thing
 
 generate the markdowns:
 
@@ -67,16 +78,12 @@ update the repo
 
 `git commit -m "message"`
 
-### remote origin
+## remote origin
 
 A remote repository is a Git repository that lives on a server and is set up to be a mirror of your local work.
 
-- initiate an orogin
-  `git remote add origin https://github.com/your/repository`
-
-- already exists. change:
-  `git remote set-url origin https://github.com/your/repository`
-
+- initiate an origin `git remote add origin https://github.com/your/repository`
+- already exists. change: `git remote set-url origin https://github.com/your/repository`
 - `git remote remove origin`
 
 #### setting up google api
@@ -92,7 +99,9 @@ it will generate a json represantation of the spreadsheet.
 
 `https://spreadsheets.google.com/feeds/cells/{{spreadsheet id}}/{{ page number }}/public/full?alt=json`
 
-`https://spreadsheets.google.com/feeds/cells/1gwm0D2LZB7WLaoZkk5yHK1q-6_3pcsQn-uywnd_YX4w/1/public/full?alt=json`
+_spreadsheet number_ often consists of very long array of numbers and letters
+
+## check the running proceses
 
 _lsof command_ stands for List Of Open File.
 This command provides a list of files that are opened.
@@ -105,6 +114,7 @@ lsof -i tcp:8000
 lsof -i:8080
 ```
 
+When listed you get the code of the process.
 To kill any process listening to the port 8080:
 
 ```git
@@ -118,3 +128,5 @@ kill num
 2. Go to your GitHub repository's settings. Under Custom domain add your custom domain and click Save. This will create a CNAME file in the root of your project publishing source. Don't delete it.
    CNAME stands for canonical name
    should be the bare minimum of your URL
+
+3. Sign into your domain provaider and change DNS

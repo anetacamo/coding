@@ -1,3 +1,6 @@
+{
+  /* 
+  
 import React, { useEffect } from 'react';
 import quotes from '../quotes.json';
 import Arrow from './arrow';
@@ -40,10 +43,13 @@ const Welcome = () => {
           <div className={`flex-center slide-cont ${fade && 'dissapear'}`}>
             <div className='boom-container flex-center'>
               <h2>{quotes[currentQuoteNumber].greet}</h2>
-              <img src={quotes[currentQuoteNumber].image2} className='boom' />
+              <img
+                src={quotes[currentQuoteNumber].image2}
+                className='boom'
+                alt='boom'
+              />
             </div>
             <div className='slide-text-container'>
-              <h5></h5>
               <h1>{quotes[currentQuoteNumber].quote}</h1>
               <p>{quotes[currentQuoteNumber].more}</p>
               <a href='/coding/#/home'>
@@ -105,3 +111,6 @@ const Welcome = () => {
   );
 };
 export default Welcome;
+
+*/
+}

@@ -2,6 +2,7 @@
 title: Css
 description: How to write css
 menu: true
+type: learning
 ---
 
 # How to write css

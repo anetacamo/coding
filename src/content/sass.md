@@ -1,6 +1,10 @@
 ---
 title: Sass
+tags: [css]
+type: learning
 ---
+
+# Sass
 
 ```css
 .btn-red {
@@ -46,7 +50,6 @@ title: Sass
 ### each loop
 
 ```css
-$sizes: 40px, 50px, 80px;
 $colors: 'red', 'yellow', 'blue', 'lightgray', 'black', 'white';
 
 @each $color in $colors {

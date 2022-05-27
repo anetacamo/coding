@@ -1,6 +1,8 @@
 ---
 title: React
 description: How to write React
+tags: [js, typescript, framework]
+type: learning
 ---
 
 React is a declarative, efficient, and flexible JavaScript library
@@ -11,12 +13,82 @@ React is a declarative, efficient, and flexible JavaScript library
 
 `npm start`
 
+`yarn start`
+
+## lifecycle
+
+The three phases are: Mounting, Updating, and Unmounting.
+
+### Mounting
+
+mounting means putting elements into the DOM.
+_The constructor()_ method is called before anything else, when the component is initiated, and it is the natural place to set up the initial state and other initial values.
+
+_The getDerivedStateFromProps()_ method is called right before rendering the element(s) in the DOM
+It takes state as an argument, and returns an object with changes to the state.
+
+The _render()_ method actually outputs the HTML to the DOM
+
+The _componentDidMount()_ method is called after the component is rendered.
+This is where you run statements that requires that the component is already placed in the DOM
+
+### Updating
+
+A component is updated whenever there is a change in the component's state or props.
+
+- getDerivedStateFromProps()
+- shouldComponentUpdate()
+- render()
+- getSnapshotBeforeUpdate()
+- componentDidUpdate()
+
+The _render()_ method is required and will always be called, the others are optional and will be called if you define them.
+
+### Unmounting
+
+The next phase in the lifecycle is when a component is removed from the DOM, or unmounting as React likes to call it.
+
+The _componentWillUnmount_ method is called when the component is about to be removed from the DOM
+
+## react hooks
+
+A Hook is a special function that lets you “hook into” React features
+
+### useState
+
+enables function component to use a state feature.
+
+`const [fruit, setFruit] = useState('banana');`
+
+_Tip: What Do Square Brackets Mean?_
+This JavaScript syntax is called “array destructuring”. It means that we’re making two new variables fruit and setFruit, where fruit is set to the first value returned by useState, and setFruit is the second. It is equivalent to this code:
+
+```js
+var fruitStateVariable = useState('banana'); // Returns a pair
+var fruit = fruitStateVariable[0]; // First item in a pair
+var setFruit = fruitStateVariable[1]; // Second item in a pair
+```
+
+useState returns a pair — an array with two items. The first item is the current value, and the second is a function that lets us update it. Using [0] and [1] to access them is a bit confusing because they have a specific meaning. This is why we use array destructuring instead.
+
+### useEffect
+
+By default, it runs both after the first render and after every update.
+
+The Effect Hook lets you perform side effects in function components:
+_Data fetching, setting up a subscription, and manually changing the DOM in React_ components are all examples of side effects.
+
+_you can think of useEffect Hook as componentDidMount, componentDidUpdate, and componentWillUnmount combined._
+something to be done after every render; after performing the DOM updates
+
+Unlike componentDidMount or componentDidUpdate, effects scheduled with useEffect don’t block the browser from updating the screen.
+
 ## enable linking
 
 `npm install --save react-router-dom`
 `npm i sass`
 
-## add code highligter
+## code highligter
 
 `npm start`
 

@@ -1,5 +1,7 @@
 ---
 title: Typescript
+tags: [js, typescript]
+type: learning
 ---
 
 ## What is Typescript?
@@ -32,9 +34,19 @@ you can also combine those two in one command
 
 #### add to existing React Project
 
+1. Install typescript and related package updates
+
 `yarn add typescript @types/node @types/react @types/react-dom @types/jest`
 
 `npm install --save typescript @types/node @types/react @types/react-dom @types/jest`
+
+2. rename all javascript files to typescript files. `index.js` to `index.tsx` and restart the server
+
+> Use `.ts` for pure TypeScript files.
+> Use `.tsx` for files which contain JSX.
+> For example, a React component would be .tsx, but a file containing helper functions would be .ts.
+
+3. When starting the servers there might be missing dependencies and errors requiring installing packages updates. try to follow instrauctions in terminal.
 
 ## Coding Typescript
 

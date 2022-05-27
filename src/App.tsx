@@ -1,7 +1,6 @@
 import Header from './components/header';
 import MegaMenu from './components/megaMenu';
 import Content from './components/content';
-import Welcome from './components/welcome';
 import postlist from './posts.json';
 import { slugify } from './utils/slugify';
 
