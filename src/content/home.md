@@ -6,7 +6,7 @@ tags: [html, basics]
 type: learning
 ---
 
-# Get Started
+# Get Started 2
 
 ### What is HTML and CSS?
 
