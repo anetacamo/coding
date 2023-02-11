@@ -3,6 +3,7 @@ title: Css
 description: How to write css
 menu: true
 type: learning
+value: 4
 ---
 
 # How to write css

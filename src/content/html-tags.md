@@ -3,9 +3,32 @@ title: Html Tags
 description: List of most commonly used html tags
 tags: [html, basics]
 type: learning
+menu: true
+value: 3
 ---
 
 # Most commonly used HTML tags
+
+HTML is written with a help of tags.
+Tags are used for helping to structure the content logically.
+They are named by shortcuts that represent the content they hold.
+
+- `<p></p>` for paragraph
+- `<div></div>` for divider
+  etc.
+
+They are important for structuring the code and making it understandable.
+They are also necessary for various screenreaders identifying the contents and navigating through the page.
+More About accessibility
+
+Each element marked by the tags often comes with certain _default_ style.
+Link -> text placed withing `<a></a>` displays blue and underlined.
+Button is rendered gray with thin border.
+
+Those styles can be overwritten with styles
+
+<button>button</button>
+<a>link</a>
 
 ### div
 
@@ -19,75 +42,126 @@ Div is a shortcut for a _divider_. It is a basic unit - _a building block_ of th
 
 ### images and links
 
-| tag syntax              | example of use                                           | default styles         | description                                                                                                                                                                                                                                              |
-| ----------------------- | -------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<img src="" alt="" />` | `<img src= "/img/dog.png" alt="a dog eating a salad" />` | display: inline-block; | **Images** _src_ attribute accepts both local and external links to images. _alt_ tag is important for SEO valiadation. That is a place to write some descriptive text about image for people with vision imparement who get the websites read out loud. |
-| `<a href=""></a>`       | `<a href= "/file.html" target="_blank">learn html</a>`   | --------------         | **Links** This is a link to the _local_ file called `about.html` in your folder. `target="_blank"` opens the link in new tab.                                                                                                                            |
+| tag syntax              | default styles                                                      | description                                                                                                                                                                                                                                              |
+| ----------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<img src="" alt="" />` | display: block;<br/> max-width: 100%;                               | **Images** _src_ attribute accepts both local and external links to images. _alt_ tag is important for SEO valiadation. That is a place to write some descriptive text about image for people with vision imparement who get the websites read out loud. |
+| `<a href=""></a>`       | color: blue;<br/> text-decoration: underlined;<br/> cursor:pointer; | **Link** is a pair tag that accepts an addres placed in quotes. You can link to any place on the internet, like `href="www.google.com"` or relatively to file in your folder `href="/about.html"`                                                        |
+
+```html
+<img src="/img/dog.png" alt="a dog eating a salad" />
+<a href="/about.html" target="_blank">learn html</a>
+```
+
+This is a link to the _local_ file called `about.html` in your folder. `target="_blank"` opens the link in new tab.
 
 ### body & Head
 
 Each html document consists of head and body pair tag that is displayed only once wrapped inside html pair tag.
 
-| tag syntax      | example of use | default styles               | description                                                                                                                                                                                |
-| --------------- | -------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `<html></html>` |                |                              | **Html tag** Each html document consists of head and body tag wrapped in pair of html tags.                                                                                                |
-| `<body></body>` |                | display: block; margin: 8px; | **Body** wraps in all the directly rendered code of html page. Each html document consists of head and body tag.                                                                           |
-| `<head></head>` |                | display: none;               | **Head** is a place where indirect settings of the page are defined: external documents are linked, favicon and page name is setted etc. Each html document consists of head and body tag. |
+| tag syntax      | default styles                                                            | description                                                                                                                                                                                |
+| --------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `<html></html>` |                                                                           | **Html tag** Each html document consists of head and body tag wrapped in pair of html tags.                                                                                                |
+| `<body></body>` | min-height:100vh;<br/> line-height: 1;<br/>display:block;<br/>margin:8px; | **Body** wraps in all the directly rendered code of html page. Each html document consists of head and body tag.                                                                           |
+| `<head></head>` | display: none;                                                            | **Head** is a place where indirect settings of the page are defined: external documents are linked, favicon and page name is setted etc. Each html document consists of head and body tag. |
 
 ### paragraphs and heading styles
 
-| tag syntax                                                              | example of use | default styles               | description                                                                                                                                                                                                                                                                                       |
-| ----------------------------------------------------------------------- | -------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<p></p>`                                                               |                |                              | **Paragraph** is a common body text.                                                                                                                                                                                                                                                              |
-| `<h1></h1>` `<h2></h2>` `<h3></h3>` `<h4></h4>` `<h5></h5>` `<h6></h6>` |                | display: block; margin: 8px; | **Headings** _h1_ is a main title, rendered in the biggest and boldest letters by default. It should be used only once on each page and should work as a main title of a page, for improving the SEO. _h2_ is a second level, and the higher the number the smaller and less bold letters become. |
-| `<blockquote></blockquote>`                                             |                | display: none;               | **Quotation style** highlighted paragraph                                                                                                                                                                                                                                                         |
+| tag syntax                                                              | default styles                                                                                              | description                                                                                                                                                                                                                                                                                       |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<p></p>`                                                               |                                                                                                             | **Paragraph** is a common body text.                                                                                                                                                                                                                                                              |
+| `<h1></h1>` `<h2></h2>` `<h3></h3>` `<h4></h4>` `<h5></h5>` `<h6></h6>` | font-weight: inherit;<br/> font-size: inherit;                                                              | **Headings** _h1_ is a main title, rendered in the biggest and boldest letters by default. It should be used only once on each page and should work as a main title of a page, for improving the SEO. _h2_ is a second level, and the higher the number the smaller and less bold letters become. |
+| `<blockquote></blockquote>`                                             | display: block;<br/>margin-top: 1em;<br/>margin-bottom: 1em;<br/>margin-left: 40px;<br/>margin-right: 40px; | **Quotation style** highlighted paragraph                                                                                                                                                                                                                                                         |
+
+```html
+<p>paragraph text is used for common text</p>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<blockquote></blockquote>
+```
+
+<p>paragraph text is used for common text</p>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<blockquote></blockquote>
 
 ### text highlighting
 
-| tag syntax  | example of use | default styles | description                                                                |
-| ----------- | -------------- | -------------- | -------------------------------------------------------------------------- |
-| `<i></i>`   |                |                | _Italic text_ Makes a text that is written within the tags italic.         |
-| `<b></b>`   |                |                | _Bold text_ Makes a text that is written within the tags bold.             |
-| `<u></u>`   |                |                | _Underlined text_ Underlines a text written within the tags.               |
-| `<em></em>` |                |                | _Emphasized text_ Makes a text that is written within the tags emphasized. |
+| tag syntax          | description                                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------------------------- |
+| `<i></i>`           | _Italic text_ Makes a text that is written within the tags italic.                                      |
+| `<b></b>`           | _Bold text_ Makes a text that is written within the tags bold. It is used clearly for a design purposes |
+| `<strong></strong>` | Meanwhile _Strong text_ should be used while one wants to indicate this is an important text.           |
+| `<u></u>`           | _Underlined text_ Underlines a text written within the tags.                                            |
+| `<em></em>`         | _Emphasized text_ Makes a text that is written within the tags emphasized.                              |
+
+```html
+<i>italic text</i>
+<b>bold text</b>
+<u>underlined text</u>
+<em>emphasized text</em>
+```
+
+<i>italic text</i>
+<b>bold text</b>
+<u>underlined text</u>
+<em>emphasized text</em>
 
 ### New Line
 
-| tag syntax | example of use | default styles | description                                      |
-| ---------- | -------------- | -------------- | ------------------------------------------------ |
-| `<br />`   |                |                | _New line_ Non pair element. Creates a new line. |
+| tag syntax | description                                      |
+| ---------- | ------------------------------------------------ |
+| `<br />`   | _New line_ Non pair element. Creates a new line. |
 
 ### Button
 
-| tag syntax           | example of use | default styles | description                                                          |
-| -------------------- | -------------- | -------------- | -------------------------------------------------------------------- |
-| `<button><button />` |                |                | **Button** A text between will be rendered as a button to be clicked |
+| tag syntax           | description                                                          |
+| -------------------- | -------------------------------------------------------------------- |
+| `<button><button />` | **Button** A text between will be rendered as a button to be clicked |
+
+```html
+<button>button with no style</button>
+```
+
+<button>button with no style</button>
+
+[more about button](https://www.w3schools.com/css/css3_buttons.asp)
+
+### section tags
+
+| tag syntax            | description                                                                                                                                                                                    |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<nav></nav>`         | _Nav_ Indicates a navigation, place where the set of links pointing to most important pages are listed                                                                                         |
+| `<header></header>`   | _Header_ Indicates a header, place where logo and navigation usually goes                                                                                                                      |
+| `<footer></footer>`   | _Footer_ Indicates a footer, other relevant links and adittional information                                                                                                                   |
+| `<section></section>` | _Section_ Indicates a new section of the page. Sections should always have a heading.                                                                                                          |
+| `<address></address>` | _Address_ provides contact information for a person or people, or for an organization.                                                                                                         |
+| `<article></article>` | _Article_ a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content. |
+| `<aside></aside>`     | _Aside_ represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.             |
+| `<main></main>`       | _Main_ represents the dominant content                                                                                                                                                         |
 
 ### LISTS
 
+| tag syntax  | default styles                                                                                                                                           | description                              |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| `<ul><ul/>` | display: block;<br/>list-style-type: disc;<br/>margin-top: 1em;<br/>margin-bottom: 1 em;<br/>margin-left: 0;<br/>margin-right: 0;<br/>padding-left: 40px | _unordered list_ - displays only bullets |
+| `<ol><ol/>` | ---                                                                                                                                                      | _ordered list_ - displays numbers        |
+
 `<ul></ul>`
 
-_unordered list_ - displays only bullets
-
 ```html
 <ul>
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
 </ul>
-```
-
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-      
-`<ol></ol>`
-      
-_ordered list_ - displays numbers
-    
-```html
 <ol>
   <li>Coffee</li>
   <li>Tea</li>
@@ -95,6 +169,11 @@ _ordered list_ - displays numbers
 </ol>
 ```
 
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
 <ol>
   <li>Coffee</li>
   <li>Tea</li>
@@ -144,12 +223,12 @@ If the name attribute is omitted, the value of the input field will not be sent 
 
 ### TABLE
 
-Table as default does not have a lot of styling. To get the look applied on the following form some styling in css needs to be done.
-
-`<table></table>`<br/>
-`<tr></tr>`<br/>
-`<th></th>`<br/>
-`<td></td>`
+| tag syntax        | description                                                   |
+| ----------------- | ------------------------------------------------------------- |
+| `<table></table>` | _table_ is a parent element indicating there will be a table. |
+| `<tr></tr>`       | _Table row_                                                   |
+| `<th></th>`       | _Table head_                                                  |
+| `<td></td>`       | _Table data cell_                                             |
 
 ```html
 <table>
@@ -159,7 +238,7 @@ Table as default does not have a lot of styling. To get the look applied on the 
   </tr>
   <tr>
     <td>January</td>
-    <td>$1</td>
+    <td>12dkk</td>
   </tr>
 </table>
 ```
@@ -171,7 +250,7 @@ Table as default does not have a lot of styling. To get the look applied on the 
   </tr>
   <tr>
     <td>January</td>
-    <td>- $100</td>
+    <td>12dkk</td>
   </tr>
 </table></pre>
 
@@ -208,12 +287,19 @@ table code {
 <div class="somename">some content</div>
 ```
 
-Div is mostly here to receive content in between its tags `<div>some content<div>` and a name by setting a class `class="somename"`. And then,to be called by its (class)name and styled in _css document_. For example, receive a background color, width or height etc.
+Div can receive _content_ in between its tags `<div>some content<div>` and a _name_ by setting a class `class="somename"`.
+The name is mostly provided in order so the element can be callled byt its (class)name and styled in _css document_. For example, receive a background color, width, height etc.
 
-Div are essential for keeping the content of html document structured. It may not seem obvious at the beggining but as the content of the page grows, some elements in layout might become duplicated or very similar. Then divs become very helpful.
+Classnames are essential for keeping the content of html document structured. As the content of the page grows, a lot of elements in layout might become duplicated or very similar.
 
-For example a content that should be displayed in frame can be wrapped in div with class `class="framed"` that will have a styled frame and will be easy to reuse throughout the web/project.
-Therefore wrapping some basic repeated content - for example _paragraphs, headings or images_ - into divs with the same classname enables to easily give them same features. For example background color.
+For example a content that should be displayed in black box can be wrapped in div with class `class="box-black"`. that will have a `background-color: black; pading: 1rem; color: white;` and will be easy to reuse throughout the web.
+
+```html
+<div class="box-black">
+  <h3>a title of a box</h3>
+  <p>a short text inside gray box</p>
+</div>
+```
 
 ### pair vs non-pair element
 

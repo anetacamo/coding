@@ -1,6 +1,6 @@
-import React from 'react';
-import { slugify } from '../utils/slugify';
+import { slugify } from '../../utils/slugify';
 import { Link } from 'react-router-dom';
+import styles from './MenuItem.module.scss';
 
 type AppProps = {
   item: any;
@@ -9,8 +9,7 @@ type AppProps = {
 const MenuItem = ({ item }: AppProps) => {
   return (
     <Link to={slugify(item.title)}>
-      <img src={`/coding/images/${slugify(item.title)}.png`} alt={item.title} />
-      <li>{item.title}</li>
+      <li className={styles.item}>{item.title}</li>
     </Link>
   );
 };

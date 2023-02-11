@@ -1,6 +1,5 @@
 ---
 title: xcrcs
-menu: true
 display: false
 tags: [js, typescript, framework]
 type: excercise
@@ -18,7 +17,7 @@ A button is a special element. When you _hover_ over it, it should notify you th
 
 #### a plot twist.
 
-Button usually is a link: that means, needs to be wrapped inside an `<a></a>` tag. But sometimes wrapping a _block_ element into an _inline_ element is not considered a best practice. Therefore using a small work-around can be recomended: Instead of using a _button_ tag `<a><button>Click me</button></a>` a class called button can be simply added to `<a>` tag : `<a class="button">Click me</a>`. Meanwhile in css:
+Button usually is a link: that means, needs to be wrapped inside an `<a></a>` tag. But sometimes wrapping a _block_ element into an _inline_ element is not considered a best practice. Therefore using a small work-around can be recomended: Instead of using a _button_ tag `<a><button>Click me</button></a>` a class called button can be simply added to `<aside>` tag : `<a class="button">Click me</a>`. Meanwhile in css:
 
 ```css
 button,
@@ -59,37 +58,40 @@ Notice a use of `<nav>` tag.
 
 ```html
 <nav class="menu">
-  <div>
-    <a href="about.html">About</a>
-  </div>
-  <div>
-    <a href="oats.html">Oats</a>
-  </div>
-  <div>
-    <a href="contact.html">Contact</a>
-  </div>
+  <ul>
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="about.html">About</a>
+    </li>
+    <li>
+      <a href="contact.html">Contact</a>
+    </li>
+  </ul>
 </nav>
 ```
 
-#### Build a second-level menu
+#### Build a second-level menu with a logo
 
 ```html
 <nav class="menu">
+  <div class="logo"><a href="index.html">Home</a></div>
   <ul>
     <li>
       <a href="about.html">About</a>
     </li>
     <li>
-      <a href="oats.html">Oats</a>
+      <a href="oatmeal.html">Oatmeal</a>
       <ul class="secondary">
         <li>
-          <a href="morning.html">Morning Oats</a>
+          <a href="morning.html">Morning Oatmeal</a>
         </li>
         <li>
-          <a href="afternoon.html">Afternoon Oats</a>
+          <a href="afternoon.html">Afternoon Oatmeal</a>
         </li>
         <li>
-          <a href="evening.html">Evening Oats</a>
+          <a href="evening.html">Evening Oatmeal</a>
         </li>
       </ul>
     </li>
@@ -101,21 +103,22 @@ Notice a use of `<nav>` tag.
 ```
 
 <nav class="test-menu">
+  <div class="logo"><a href="index.html">Home</a></div>
   <ul>
     <li>
       <a href="about.html">About</a>
     </li>
     <li>
-      <a href="oats.html">Oats</a>
+      <a href="oatmeal.html">Oatmeal</a>
       <ul class="secondary">
         <li>
-          <a href="morning.html">Morning Oats</a>
+          <a href="morning.html">Morning Oatmeal</a>
         </li>
         <li>
-          <a href="afternoon.html">Afternoon Oats</a>
+          <a href="afternoon.html">Afternoon Oatmeal</a>
         </li>
         <li>
-          <a href="evening.html">Evening Oats</a>
+          <a href="evening.html">Evening Oatmeal</a>
         </li>
       </ul>
     </li>
@@ -138,6 +141,34 @@ Notice a use of `<nav>` tag.
 ### Custom Text-highlighting
 
 ### Build a responsive layout
+
+```html
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="" />
+      </div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside></aside>
+  <main></main>
+
+  <footer>
+    <nav>
+      <div class="logo">
+        <img src="" />
+      </div>
+    </nav>
+  </footer>
+</body>
+```
 
 ### Flexbox item list
 

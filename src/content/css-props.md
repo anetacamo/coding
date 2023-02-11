@@ -1,13 +1,15 @@
 ---
-title: Css Props III
+title: Css Props
 description: List of the most useful CSS properties and examples of use
 tags: [css, styles, basics]
 type: learning
+menu: true
+value: 5
 ---
 
 # list of useful css properities
 
-For the sake of all of us this is not a complete list. For the full exhausting list of CSS properities look a those [539 styles total](https://www.w3.org/Style/CSS/all-properties.en.html)
+For the sake of all of us this is not a complete list. For the full exhausting list of CSS properities look up those [539 styles total](https://www.w3.org/Style/CSS/all-properties.en.html)
 
 ### background styling
 

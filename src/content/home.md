@@ -1,12 +1,24 @@
 ---
 title: Home
 description: Go back home. I mean, get started
-menu: true
 tags: [html, basics]
 type: learning
 ---
 
-# Get Started 2
+# Get Started
+
+### HTML
+
+1. [introduction](./#/html)
+2. [head](/#/html-head)
+3. [body](/#/html-tags)
+
+### CSS
+
+4. [introduction](./#/css)
+5. [list of props](./#/css-props)
+
+### JS
 
 ### What is HTML and CSS?
 
@@ -47,18 +59,30 @@ homepage/
 
 ### Inspecting element
 
-When you are coding most of the time it does not work. The best tool to help finding out where the problem is is a code inspector built in most of the big browsers like _chrome_ or _firefox_. Head to the browser with your web and hit `Cmd + O` or `Ctrl + O`. Here you can inspect the whole `DOM` structure. If you click on any of the `elements` you can see what styles are applied and you can add/remove or modify them to easily see how the page will look.
+When you are coding most of the time it does not work. The best tool to help finding out where the problem is a _code inspector_ built in most of the big browsers like _chrome_ or _firefox_. Head to the browser with your web and rightclick anything you would like to inspect. Choose inspect element from menu. Alternatively `Cmd + Option + i`. Here you can browse whole `DOM` structure. If you click on any of the `elements` you can see what styles are applied and you can add/remove or modify them to easily see how the page would look.
 
 ### Shortcuts
 
-| Event                       | Shortcut on Windows | Shortcut on Mac |
-| --------------------------- | ------------------- | --------------- |
-| Find your folder in browser | Ctrl + O            | Cmd + O         |
-| Refresh a page              | Ctrl + R            | Cmd + R         |
-| Inspect an Element          | Ctrl + Shift + C    | Cmd + Shift + C |
-| Find and highligt same text | Ctrl + D            | Cmd + D         |
-| Comment code                | Ctrl + K + C        | Cmd + K + C     |
-| Uncomment                   | Ctrl + K + U        | Cmd + K + U     |
+## useful browser shortcuts
+
+| Event                       | Shortcut on Windows | Shortcut on Mac     |
+| --------------------------- | ------------------- | ------------------- |
+| Find your folder in browser | Ctrl + O            | Cmd + O             |
+| Refresh a page              | Ctrl + R            | Cmd + R             |
+| Inspect an Element          | Ctrl + Shift + C    | Cmd + Shift + C     |
+| Measure and screenshot      | Ctrl + shift + 4    | Command + shift + 4 |
+
+## useful editor shortcuts
+
+| Event                                       | Shortcut on Windows      | Shortcut on Mac          |
+| ------------------------------------------- | ------------------------ | ------------------------ |
+| Find and highligt same text in current file | Ctrl + D                 | Cmd + D                  |
+| Search in whole VS Code                     | Ctrl + Shift + F         | Cmd + Shift + F          |
+| Comment code                                | Ctrl + K + C             | Cmd + K + C              |
+| Uncomment                                   | Ctrl + K + U             | Cmd + K + U              |
+| Save code in your editor                    | Ctrl + S                 | Cmd + S                  |
+| Highligt previous or next char              | Shift + arrow            | Shift + arrow            |
+| Highlights previous or next line of text    | Shift + Up or Down Arrow | Shift + Up or Down Arrow |
 
 ### Special characters:
 

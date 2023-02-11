@@ -1,6 +1,5 @@
 ---
-title: JS
-menu: true
+title: Javascript
 tags: [js, basics]
 type: learning
 ---
@@ -11,7 +10,7 @@ type: learning
 
 > JavaScript is already running in your browser on your computer, on your tablet, and on your smart-phone.
 
-In order to run JS needs a JavaScript engine:
+In order to run - JS needs a JavaScript engine:
 
 - `V8` for Chrome & Opera.
 - `SpiderMonkey` for Firefox.
@@ -25,7 +24,7 @@ In order to run JS needs a JavaScript engine:
 
 1.) javascript code is stored in files with `.js` ending.
 
-2.) In order to link the script - it needs to be referenced in html document. Scripts can be placed both in the usually end of `<body>`, or in the `<head>`.
+2.) In order to link the script - it needs to be referenced in html document. Scripts can be placed both in (usually end of) `<body>`, or in the `<head>`.
 
 ```html
 <script src="file.js"></script>
