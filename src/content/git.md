@@ -82,6 +82,7 @@ update the repo
 
 A remote repository is a Git repository that lives on a server and is set up to be a mirror of your local work.
 
+- git remote -v
 - initiate an origin `git remote add origin https://github.com/your/repository`
 - already exists. change: `git remote set-url origin https://github.com/your/repository`
 - `git remote remove origin`
