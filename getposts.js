@@ -15,19 +15,22 @@ const getPosts = () => {
       let post;
       fs.readFile(`${dirPath}/${file}`, 'utf8', (err, contents) => {
         /* only metadata */
-
+        /* here we remove first --- of frontmatter */
         let meta = contents.substring(4);
+        /* here we cut off everything beggining with ending --- of frontmatter */
         let metadata = meta.substring(0, meta.indexOf('---') - 1);
 
-        /* md made into an object */
+        /* only text*/
+        /* remove everything BEFORE --- */
+        let text = meta.substring(meta.indexOf('---') + 5);
 
+        /* md made into an object */
         let lines = metadata.split('\n');
         lines.forEach(
           (line) => (obj[line.split(': ')[0]] = line.split(': ')[1])
         );
+        obj['text'] = text;
 
-        console.log(obj);
-        console.log(i);
         postlist.push(obj);
         if (postlist.length === files.length) {
           let data = JSON.stringify(postlist);
