@@ -10,15 +10,17 @@ type: learning
 ### HTML
 
 1. [introduction](./#/html)
-2. [head](/#/html-head)
-3. [body](/#/html-tags)
+2. [head](./#/html-head)
+3. [body](./#/html-tags)
 
 ### CSS
 
 4. [introduction](./#/css)
 5. [list of props](./#/css-props)
 
-### JS
+### building a web
+
+7. [practices](./#/xcrcs)
 
 ### What is HTML and CSS?
 
@@ -45,7 +47,7 @@ Go to your browser and click `CMD + o` for mac and `CTRL + o` for windowa . Find
 Your website might have more then a homepage named `index.html`. If so, those pages should be placed in the same folder and saved with their specific names: `about.html` and `contact.html` You will probably need a folder with images and a folder with styles. And this is how the structure of your folder might end up looking:
 
 ```
-homepage/
+your-web-folder/
 -- index.html
 -- about.html
 -- contact.html
@@ -59,7 +61,9 @@ homepage/
 
 ### Inspecting element
 
-When you are coding most of the time it does not work. The best tool to help finding out where the problem is a _code inspector_ built in most of the big browsers like _chrome_ or _firefox_. Head to the browser with your web and rightclick anything you would like to inspect. Choose inspect element from menu. Alternatively `Cmd + Option + i`. Here you can browse whole `DOM` structure. If you click on any of the `elements` you can see what styles are applied and you can add/remove or modify them to easily see how the page would look.
+When you are coding most of the time it does not work. The best tool to help finding out where the problem is a _code inspector_ built in most of the big browsers like _chrome_ or _firefox_.
+
+Head to the browser with your web and rightclick anything you would like to inspect. Choose inspect element from menu. Alternatively `Cmd + Option + i`. Here you can browse whole `DOM` structure. If you click on any of the `elements` you can see what styles are applied and you can add/remove or modify them to easily see how the page would look.
 
 ### Shortcuts
 

@@ -1,17 +1,21 @@
 import { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
-import gfm from 'remark-gfm';
+import Markdown from 'markdown-to-jsx';
+import postlist from '../posts.json';
+import { slugify } from '../utils/slugify';
+import Code from './Code/Code';
 
-type AppProps = {
-  match: any;
-  tables: any;
-};
+// IMPORTANT TODO
 
-const Content = ({ match, tables }: AppProps) => {
-  let title = match.path.substring(1);
+// for working on the blog the commented useEffect should be uncommented
+// on line 39: post.text change to text
+
+const Content = ({ match, tables }) => {
+  let title = match.path.slice(1);
 
   const [eventText, setEventText] = useState('');
   const [text, setText] = useState('');
+
+  const post = postlist.find((event) => slugify(event.title) === title);
 
   useEffect(() => {
     import(`../content/${title}.md`)
@@ -24,18 +28,18 @@ const Content = ({ match, tables }: AppProps) => {
       .catch((err) => console.log(err));
     const nometa = eventText.substring(eventText.indexOf('---') + 5);
     setText(nometa.substring(nometa.indexOf('---') + 5));
-    console.log(text);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text, eventText]);
 
   return (
     <div className={`container blog-text ${tables}`}>
-      <ReactMarkdown
-        plugins={[gfm]}
-        children={text}
+      <Markdown
         allowDangerousHtml={true}
-      />
+        options={{ overrides: { Code: { component: Code } } }}
+      >
+        {text}
+      </Markdown>
     </div>
   );
 };

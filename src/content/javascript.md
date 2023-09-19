@@ -18,6 +18,8 @@ In order to run - JS needs a JavaScript engine:
 - `ChakraCore` for Microsoft Edge
 - `Nitro and SquirrelFish` for Safari, etc.
 
+Historically, JavaScript has been written to be interpreted by the browser. This is why it's called a client-side language. The browser is the client. The server is the server.
+
 ## Getting started
 
 #### Linking

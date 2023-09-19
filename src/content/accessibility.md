@@ -11,8 +11,8 @@ _also referred to as a11y_
 
 > is the design and creation of websites that can be used by everyone
 
-Which means mostly people with certain degree of vision imapairment or problems with motorics.
-There are two important tools to have in mind :
+Which means including people with certain degree of vision imapairment or problems with motorics.
+There are two important tools to have in mind:
 
 - screen readers
 - navigation via keyboard
@@ -30,7 +30,7 @@ tabIndex is a global attribute that allows an HTML element to receive focus
 Links buttons and headings should be all accessible chronologically by _tab_
 
 `<a></a>` and `<button></button>` elements have this feature by default built in.<br/>
-But if you for some reason need to use a different element that is not being accessed OR want to remove an element from this flow.
+But if you for some reason need to use a different element that is not being accessed OR want to remove an element from this flow,
 
 you can do so by `tab-index`
 
@@ -66,9 +66,9 @@ _Web Accessibility Initiative - Accessible Rich Internet Applications_
 
 ### Semantic HTML & landmark elements
 
-Using self-descriptive tags like headings, buttons, paragraphs etc..
+Using self-descriptive tags like headings, buttons, paragraphs etc.. often does the job.
 
-use of landmark elements, such as `<main>` and `<aside>`, to demarcate page regions as assistive technology allow the user to quickly navigate to these sections. => [content sectioning](/#/html-tags#section-tags)
+Use of landmark elements, such as `<main>` and `<aside>`, to demarcate page regions as assistive technology allow the user to quickly navigate to these sections. => [content sectioning](/#/html-tags#section-tags)
 
 ### ARIA Landmark roles and HTML5 implicit mapping
 

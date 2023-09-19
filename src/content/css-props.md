@@ -60,7 +60,11 @@ For the sake of all of us this is not a complete list. For the full exhausting l
 
 ### Flexbox
 
-Flexbox is a great way how to handle content that needs to be centered. Especially when working with multiple columns. Following features are only working on a element that has setted `display:flex`
+Flexbox is a great solution for handling grids, columns or rows => working with content like a lot of posts or a lot of images.
+
+But also when you need to Especially when working with multiple columns. Following features are only working on a element that has setted `display:flex`
+
+if you have multiple divs
 
 | tag syntax      | example of use                                                                                                                      | default styles | description                                                                                                                                                |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |

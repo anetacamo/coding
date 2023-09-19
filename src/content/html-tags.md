@@ -281,31 +281,47 @@ table code {
 
 ## More about html elements
 
-### div and its family tree
+### calling div names
+
+in `index.html` :
 
 ```html
-<div class="somename">some content</div>
+<div class="box-black">some content</div>
 ```
 
-Div can receive _content_ in between its tags `<div>some content<div>` and a _name_ by setting a class `class="somename"`.
-The name is mostly provided in order so the element can be callled byt its (class)name and styled in _css document_. For example, receive a background color, width, height etc.
+- Div can receive _content_ in between its tags `<div>some content<div>`
+- And a _name_ by setting a class `class="box-black"`.
+
+The name is mostly provided in order so the element can be callled by its (class)name and styled in _css document_. For example, receive a background color, width, height etc.
+
+in `style.css` :
+
+```css
+.box-black {
+  background-color: black;
+  padding: 1rem;
+  color: white;
+}
+```
 
 Classnames are essential for keeping the content of html document structured. As the content of the page grows, a lot of elements in layout might become duplicated or very similar.
 
-For example a content that should be displayed in black box can be wrapped in div with class `class="box-black"`. that will have a `background-color: black; pading: 1rem; color: white;` and will be easy to reuse throughout the web.
+A content that should be displayed in black box is wrapped in div with class `class="box-black"`. that will have a black backround, text inside will be white etc.
+
+This class can be reused throughout the web and applied on other elements.
 
 ```html
 <div class="box-black">
   <h3>a title of a box</h3>
-  <p>a short text inside gray box</p>
+  <p>another text inside gray box</p>
 </div>
 ```
 
 ### pair vs non-pair element
 
-Div is always a _pair_ element. It means it will always consist of a double tag: an opening tag without a dash `<div>` and a closing tag with a dash`</div>`. It is an essential feature for wrapping more content in. If one of the tags is missing it will break the desired flow of the whole project.
+Div is a _pair_ element. It means it consists of a double tag: an opening tag _without_ a dash `<div>` and a closing tag _with_ a dash `</div>`. If one of the tags is missing its partner, it will not just break the desired flow of the whole project but might completely mess up the whole page untill the non-closed tag is closed.
 
-A _non-pair_ element. For example `<img />` or `<input />` They are already content themselfs, they cannot contain anymore elements, therefore they are single tags.
+A _non-pair_ element. For example `<img />` or `<input />` They are already representing content through its properties, they cannot contain anymore elements, therefore they are single tags.
 
 Divs are pretty much all about hierarchy:
 

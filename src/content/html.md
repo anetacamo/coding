@@ -13,6 +13,9 @@ value: 1
 
 Each html file consist of _body_ and a _head_.
 
+
+
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -31,10 +34,10 @@ Each html file consist of _body_ and a _head_.
 
 **Head** is where you define settings for your page:
 
-- give page a name to be displayed in the browser window. This is required. `<title></title>`
-- icon that will be displayed in the browser window (_favicon_)
-- where you link the styles `<link />`
-- define text, image and subtitles for sharing at social networks _meta tags_
+- give each page a name. This name will be displayed in the browser window. This is required. `<title></title>`
+- optional icon that will be displayed in the browser window (_favicon_)
+- where you link the styles via `<link></link>`
+- define title, image for thumbnails that will be shared at social networks _meta tags_
 
 ```html
 <head>
@@ -48,11 +51,12 @@ Each html file consist of _body_ and a _head_.
 
 ### Body
 
-**Body** is a place where you write the actual code you can see on the website
+**Body** is a place where you write the actual code that gets rendered into the website look
 
-- done via html tags named in shortcuts representing actual content.
-- for regular paragraph text `<p></p>`
-- for heading `<h1></h1>`
+- This is done via html tags. 
+- Tags are named by shortcuts representing their actual content.
+- for regular paragpraph text: `<p></p>`
+- for fist level (biggest) heading `<h1></h1>` etc.
 
 ```html
 <body>
@@ -65,6 +69,8 @@ Each html file consist of _body_ and a _head_.
 
 ### Comment in html
 
-In html and css (and any other language) you can write notes to yourself or anyone else. Every language has a specific way to render a comment. Comments will be published and accessible in the source code but will not interact with the code.
+In html and css (and any other language) you can write notes to yourself or anyone else. 
+<br/> Every programming language has a specific way to render a comment. <br/>
+Comments will be accessible in the _source code_ but will not be visible on the website.
 
 `<!-- this is a comment in html --> `

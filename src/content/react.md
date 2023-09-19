@@ -5,7 +5,49 @@ tags: [js, typescript, framework]
 type: learning
 ---
 
-React is a declarative, efficient, and flexible JavaScript library
+React is a declarative, efficient, and flexible JavaScript library.
+
+## how does react work?
+
+> React uses DOM methods and a programming language, JavaScript, to listen to user events and manipulate the DOM by selecting, adding, updating, and deleting specific elements in the user interface
+
+React injects itself by targeting first element inside html div
+
+```html
+<!-- index.html -->
+<html>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
+```
+
+you can use regular Js to create new elements and update dom, but the code becomes really long:
+
+here creating a heading inside `<div id="app"></div>` above
+
+```html
+<!-- index.html -->
+<script type="text/javascript">
+  const app = document.getElementById('app');
+  const header = document.createElement('h1');
+  const headerContent = document.createTextNode('Develop. Preview. Ship. 🚀');
+  header.appendChild(headerContent);
+  app.appendChild(header);
+</script>
+```
+
+#### HTML vs DOM
+
+_HTML_ represents the initial page content, whereas the DOM represents the updated page content which was changed by the JavaScript code you wrote.
+
+#### Imperative vs Declarative Programming
+
+_imperative programming_ means writing every single command and step in code meanwhile _declarative programing_ is creating sets of commands and shortcuts that do the complex jobs.
+
+#### JSX
+
+React is representing html element by _JSX_. Browsers don’t understand JSX out of the box, so you’ll need a JavaScript compiler, such as a Babel
 
 ## Create react app
 
@@ -83,36 +125,10 @@ something to be done after every render; after performing the DOM updates
 
 Unlike componentDidMount or componentDidUpdate, effects scheduled with useEffect don’t block the browser from updating the screen.
 
-## enable linking
+## adding navigation
 
 `npm install --save react-router-dom`
 `npm i sass`
-
-## code highligter
-
-`npm start`
-
-`npm install --save prismjs`
-
-```js
-import React, { useEffect } from 'react';
-import Prism from 'prismjs';
-import 'prismjs/themes/prism-tomorrow.css';
-import './styles.css';
-
-export default function Code({ code, language }) {
-  useEffect(() => {
-    Prism.highlightAll();
-  }, []);
-  return (
-    <div className='Code'>
-      <pre>
-        <code className={`language-${language}`}>{code}</code>
-      </pre>
-    </div>
-  );
-}
-```
 
 ## Publish to gitHub
 
@@ -214,9 +230,65 @@ export default function MyComponent() {}
 ```
 
 ```js
+export default function MyComponent() {
+    return(
+      ..
+    )
+}
+```
+
+```js
 slides={range(1, 8).map(id => ({
     image: {
         src: `references/case-studies/citymove/carousel/${id}.png`,
     },
 }))}
 ```
+
+upgrading the dependency
+
+```js
+yarn upgrade react-markdown
+```
+
+dev dependency vs dependency
+
+```
+
+```
+
+REact on its own is only a library that allows us to define components and does the diffing part.
+React with help of renderers translates components into virtual dom, tree of elements, and keeps it updated (inserts new elements wherever they need to be inserted).
+Actual DOM building (rendering) is done by renderers like ReactDOM, React Native.
+
+When state is being updated a renderer creates an instance, represantation of the new component that has setted instance.updater
+
+React Components are hierarchy of elements (divs, images, paragraphs etc.)
+
+When render() method is called from the top level React translated every single element into hyerarchy - a tree of objects reflecting not just each component but the structure of whole app.
+This tree of elements is kept in memory and is what is called a virtual DOM
+
+From the virtual DOM actual DOM is being built. On initial render whole tree is built. That is an expensive process.
+
+From now on anytime a virtual DOM is updated. React will use a Diffing algorythm to find a differences in the virtual and regular DOM.
+
+```
+console.log(App())
+```
+
+JSX gets converted into React.createElement function calls
+
+```
+$$typeof:Symbol(react.element)
+key: null
+props: {children: "Hello World"}
+ref:null
+type: "h1"
+```
+
+This way react creates instances, i.e. represantations of each component and keeps track of it
+Each instance has a state and a lifecycle
+
+### importance of keys
+
+Keys help to optimize updating of list items. If the key names are unchanged react will not rebuild the whole component only update the new or missing item with the given key.
